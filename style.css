@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+/*  */
+body{
+    padding:0;
+    margin:0;
+    font-family: Bai Jamjuree,sans-serif;
+}
+button{
+    padding:10px 20px;
+    border-radius: 50px;
+    color:white;
+    margin: 20px auto;
+    border:transparent;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+}
+a{text-decoration: none; color:hsl(210, 10%, 33%);}
+a:hover{
+    cursor: pointer;
+    color:hsl(171, 66%, 44%); 
+}
+p{
+ color: hsl(201, 11%, 66%);   
+}
+h2,h3{
+    margin:20px auto;
+}
+/* button styles color */
+#green{
+    background-color: hsl(171, 66%, 44%);
+}
+#blue{
+    background-color:hsl(233, 100%, 69%);
+}
+/*  */
+.main{
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main img{
+    margin:20px;
+}
+.submain{
+    margin:20px auto;
+    line-height: 30px
+}
+/* main section ends here */
+
+.keeptrack{
+    margin:50px auto;
+    line-height: 25px;
+    max-width:700px;
+}
+
+.subsection{
+    display: flex;
+    margin:20px auto;
+}
+
+.laptop{
+    transform: translateX(-50px);
+    margin-right:10px;
+}
+.laptop img{
+    width:100%;
+    max-width:700px;
+}
+.subsection-left{
+    width:320px;
+}
+.subsection-left h2,.subsection p{
+    text-align: left;
+}
+.access{
+    margin:50px auto;
+}
+.access-content{
+    margin:100px auto;
+    width:100%;
+    max-width:500px;
+}
+.access img{
+    width:100%;
+    max-width:1000px;
+}
+.supercharge{
+    margin:50px auto;
+}
+
+.second-section{
+    display:flex;
+    margin:100px auto;
+}
+.box{
+    padding:10px;
+    margin: 10px;
+}
+
+
+.icon{
+    margin:20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.icon img{
+    margin: auto 30px;
+}
+
+.clipboard{
+    margin:60px auto;
+    width:100%;
+    max-width:500px;
+}
+
+
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:hsl(201, 11%, 66%);
+    padding:50px;
+}
+footer > img{
+    width:40px;
+    height:40px;
+    margin:10px;
+}
+.footer ul a{
+    display: block;
+    text-align: left;
+    margin:10px auto;
+}
+.f-icon img{
+        margin:10px;
+    }
+
+.attribution{
+    background-color: black;
+    color:white;
+}
+
+
+
+
+ /* media query for smaller devices */
+@media (max-width:375px){
+    button{
+        margin:5px;
+        width:200px;
+    }
+    .main{
+        background-image: url("images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:15px;
+    }
+    .submain h1{
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .keeptrack{
+        padding:15px;
+    }
+    .subsection{
+        flex-flow:column;
+        padding:10px;
+        margin:10px auto;
+    }
+    .laptop img{
+        transform: translateX(50px);
+        width:200px;
+        height:auto;
+        margin: auto auto;
+    }
+    .subsection-left h2,.subsection-left p{
+        text-align: center;
+    }
+    .access{
+        padding:10px;
+        margin:20px auto;
+    }
+    .access img{
+        width:250px;
+    }
+    .supercharge{
+        padding:10px;
+    }
+
+    .second-section{
+        flex-flow: column;
+    }
+    .icon{
+        flex-direction: column;
+    }
+    .icon img{
+        margin:20px auto;
+        flex-direction: column;
+    }
+    .clipboard{
+        padding:10px;
+    }
+    .footer{
+        display: flex;
+        flex-flow: wrap column;
+    }
+    .footer img{
+        text-align: center;
+        margin:auto;
+    }
+    .footer ul a{
+        text-align: center;
+        margin: 20px auto;
+    }
+    .f-icon img{
+        margin:10px;
+    }
+    .attribution{
+        text-align: center;
+        font-size: 12px;
+        padding:8px;
+    }
+
+}
